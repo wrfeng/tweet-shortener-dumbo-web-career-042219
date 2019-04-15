@@ -31,3 +31,14 @@ def selective_tweet_shortener(string)
   string = word_substituter(string) if string.length > 140
   string
 end
+
+def selective_tweet_truncator(string)
+  string = selective_tweet_truncator(string)
+  
+  if string.length > 140
+    string = string[0..-4] + "..."
+  end
+  
+  string
+  
+end
