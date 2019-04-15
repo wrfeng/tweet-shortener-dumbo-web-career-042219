@@ -26,3 +26,4 @@ end
 def bulk_tweet_shortener(arr)
   arr.each {|sentence| puts word_substituter(sentence)}
 end
+
